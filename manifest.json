@@ -1,0 +1,17 @@
+{
+  "name": "makeuseof infinite scrolling",
+  "description": "pretty simple",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": 
+    [
+        {
+            "matches":["http://www.makeuseof.com/*"],
+            "js":["jquery.js", "infiniteScrolling.js"]
+            
+        }
+    ],
+  "manifest_version": 2
+}
